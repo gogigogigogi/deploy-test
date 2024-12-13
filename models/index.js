@@ -1,8 +1,8 @@
 "use strict";
 const Sequelize = require("sequelize");
-
+require("dotenv").config();
 const env = process.env.NODE_ENV || "development";
-let config = require(__dirname + "/../config/config.js")[env];
+let config = require(__dirname + "/../config/config.js");
 // "development" or "production" or "undefined"
 console.log("env", env);
 console.log("NODE_ENV", process.env.NODE_ENV);
